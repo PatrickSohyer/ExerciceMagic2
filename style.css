@@ -1,0 +1,53 @@
+body, #Tallmonitor, #Waymonitor, #littlemonitor {
+  margin: 0;
+}
+
+#container {
+  width: 100%;
+  height: 100vh;
+  background-color: green;
+}
+
+@media screen and (max-width:2000px) {
+  #container {
+    background-color: green;
+  }
+
+  #Tallmonitor {
+    font-size: 50px;
+  }
+
+  #Waymonitor, #littlemonitor {
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width:850px) {
+  #container {
+    background-color: orange;
+  }
+
+  #Waymonitor {
+    visibility: visible;
+    font-size: 25px;
+  }
+
+  #Tallmonitor, #littlemonitor {
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width:600px) {
+  #container {
+    background-color: red;
+  }
+
+  #littlemonitor {
+    visibility: visible;
+    font-size: 10px;
+  }
+
+  #Tallmonitor, #Waymonitor {
+    visibility: hidden;
+  }
+}
